@@ -4,7 +4,7 @@ recognition.lang = "en-US";
 document.querySelector("button").addEventListener("click", function () {
     function speak(text) {
         const utterance = new SpeechSynthesisUtterance(text);
-        window.speechSynthesis.speak(utterance); // ✅ Fixed casing
+        window.speechSynthesis.speak(utterance); // 
     }
 
     function handleCommand(command) {
@@ -16,7 +16,7 @@ document.querySelector("button").addEventListener("click", function () {
             window.open("https://www.facebook.com", "_blank");
         } else if (command.includes("Open Instagram")) {
             speak("Opening Instagram...");
-            window.open("https://www.instagram.com", "_blank"); // ✅ Fixed misspelled URL
+            window.open("https://www.instagram.com", "_blank"); // 
         } else {
             speak("Search on Youtube");
         }
